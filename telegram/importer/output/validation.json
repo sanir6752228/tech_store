@@ -1,0 +1,20 @@
+{
+  "valid": true,
+  "quality": "GOOD",
+  "score": 100,
+  "errors": [],
+  "warnings": [],
+  "researchVerified": true,
+  "validatedAt": "2026-10-07T11:31:11.145200+00:00",
+  "summary": {
+    "name": "iPhone 14",
+    "brand": "Apple",
+    "model": "iPhone 14",
+    "category": "phones",
+    "condition": "Б/У",
+    "price": 33000,
+    "images": 3,
+    "ocrConfidence": 0.902,
+    "researchVerified": true
+  }
+}

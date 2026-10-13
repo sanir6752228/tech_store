@@ -1,0 +1,194 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+model User {
+  id           Int      @id @default(autoincrement())
+  name         String
+  email        String   @unique
+  phone        String?
+  passwordHash String
+  role         UserRole @default(USER)
+
+  repairs Repair[]
+  orders  Order[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id       Int       @id @default(autoincrement())
+  name     String
+  slug     String    @unique
+  products Product[]
+}
+
+model Product {
+  id    Int    @id @default(autoincrement())
+  name  String
+  brand String
+  model String
+
+  categoryId Int
+  category   Category @relation(fields: [categoryId], references: [id])
+
+  condition String
+  status    String
+
+  memory  String?
+  color   String?
+  battery String?
+
+  price    Int
+  oldPrice Int?
+
+  description String?
+  images      String[]
+
+  telegramVideo String?
+
+  quantity Int @default(1)
+  rating   Int @default(0)
+  reviews  Int @default(0)
+
+  year  Int?
+  sales Int  @default(0)
+
+  display   String?
+  processor String?
+  camera    String?
+  sim       String?
+
+  isNew Boolean @default(false)
+  isHit Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  orderItems OrderItem[]
+}
+
+model Order {
+  id Int @id @default(autoincrement())
+
+  userId Int?
+  user   User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  customerName  String
+  phone         String
+  city          String
+  address       String
+  contactMethod String
+  botArchived Boolean @default(false)
+  comment String?
+
+  total Int
+
+  status String @default("Новый")
+
+  items OrderItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model OrderItem {
+  id Int @id @default(autoincrement())
+
+  orderId Int
+  order   Order @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  productId Int?
+  product   Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
+
+  productName String
+  price       Int
+  quantity    Int    @default(1)
+
+  createdAt DateTime @default(now())
+}
+
+model Repair {
+  id Int @id @default(autoincrement())
+
+  userId Int?
+  user   User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  customerName  String
+  phone         String
+  contactMethod String
+
+  city    String?
+  address String?
+
+  deviceType String
+  brand      String?
+  model      String?
+
+  problem     String
+  description String?
+
+  status       String  @default("Новая")
+  adminComment String?
+  price        Int?
+
+  photos String[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+
+model ProductDraft {
+  id              Int       @id @default(autoincrement())
+
+  name            String
+  brand           String?
+  model           String?
+  category        String?
+  condition       String?
+  memory          String?
+  color           String?
+  battery         String?
+
+  price           Int?
+  oldPrice        Int?
+
+  description     String?
+
+  display         String?
+  processor       String?
+  camera          String?
+  sim             String?
+  year            Int?
+
+  images          String[]
+  telegramVideo   String?
+  sourceType      String?
+  sourceUrl       String?
+
+  ocrConfidence   Float?
+  researchVerified Boolean  @default(false)
+  researchSource String?
+  researchUrl    String?
+
+  rawData         Json?
+
+  status          String    @default("PENDING")
+
+  adminComment    String?
+
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}

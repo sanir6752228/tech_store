@@ -1,0 +1,91 @@
+{
+  "status": "SUCCESS",
+  "startedAt": "2026-10-07T14:30:36",
+  "finishedAt": "2026-10-07T14:31:11",
+  "steps": [
+    {
+      "step": 1,
+      "name": "Обработка видео",
+      "script": "video_processor.py",
+      "status": "SUCCESS",
+      "returnCode": 0,
+      "outputsValid": true,
+      "startedAt": "2026-10-07T14:30:36",
+      "finishedAt": "2026-10-07T14:30:40",
+      "stdout": "======================================================================\nTECHSTORE VIDEO PROCESSOR\n======================================================================\n\nВидео: story.mp4\nFPS: 30.00\nКадров: 753\nПродолжительность: 25.10 сек.\nИнтервал: 0.50 сек.\n\n[001] frame_0000.jpg — 0.0 сек.\n[002] frame_0001.jpg — 0.5 сек.\n[003] frame_0002.jpg — 1.0 сек.\n[004] frame_0003.jpg — 1.5 сек.\n[005] frame_0004.jpg — 2.0 сек.\n[006] frame_0005.jpg — 2.5 сек.\n[007] frame_0006.jpg — 3.0 сек.\n[008] frame_0007.jpg — 3.5 сек.\n[009] frame_0008.jpg — 4.0 сек.\n[010] frame_0009.jpg — 4.5 сек.\n[011] frame_0010.jpg — 5.0 сек.\n[012] frame_0011.jpg — 5.5 сек.\n[013] frame_0012.jpg — 6.0 сек.\n[014] frame_0013.jpg — 6.5 сек.\n[015] frame_0014.jpg — 7.0 сек.\n[016] frame_0015.jpg — 7.5 сек.\n[017] frame_0016.jpg — 8.0 сек.\n[018] frame_0017.jpg — 8.5 сек.\n[019] frame_0018.jpg — 9.0 сек.\n[020] frame_0019.jpg — 9.5 сек.\n[021] frame_0020.jpg — 10.0 сек.\n[022] frame_0021.jpg — 10.5 сек.\n[023] frame_0022.jpg — 11.0 сек.\n[024] frame_0023.jpg — 11.5 сек.\n[025] frame_0024.jpg — 12.0 сек.\n[026] frame_0025.jpg — 12.5 сек.\n[027] frame_0026.jpg — 13.0 сек.\n[028] frame_0027.jpg — 13.5 сек.\n[029] frame_0028.jpg — 14.0 сек.\n[030] frame_0029.jpg — 14.5 сек.\n[031] frame_0030.jpg — 15.0 сек.\n[032] frame_0031.jpg — 15.5 сек.\n[033] frame_0032.jpg — 16.0 сек.\n[034] frame_0033.jpg — 16.5 сек.\n[035] frame_0034.jpg — 17.0 сек.\n[036] frame_0035.jpg — 17.5 сек.\n[037] frame_0036.jpg — 18.0 сек.\n[038] frame_0037.jpg — 18.5 сек.\n[039] frame_0038.jpg — 19.0 сек.\n[040] frame_0039.jpg — 19.5 сек.\n[041] frame_0040.jpg — 20.0 сек.\n[042] frame_0041.jpg — 20.5 сек.\n[043] frame_0042.jpg — 21.0 сек.\n[044] frame_0043.jpg — 21.5 сек.\n[045] frame_0044.jpg — 22.0 сек.\n[046] frame_0045.jpg — 22.5 сек.\n[047] frame_0046.jpg — 23.0 сек.\n[048] frame_0047.jpg — 23.5 сек.\n[049] frame_0048.jpg — 24.0 сек.\n[050] frame_0049.jpg — 24.5 сек.\n[051] frame_0050.jpg — 25.0 сек.\n\n----------------------------------------------------------------------\nИзвлечено кадров: 51\nПапка: C:\\project\\tech_store\\telegram\\importer\\output\\frames\n----------------------------------------------------------------------\n\n======================================================================\nVIDEO PROCESSING ЗАВЕРШЁН\n======================================================================\n",
+      "stderr": ""
+    },
+    {
+      "step": 2,
+      "name": "OCR — распознавание товара",
+      "script": "ocr.py",
+      "status": "SUCCESS",
+      "returnCode": 0,
+      "outputsValid": true,
+      "startedAt": "2026-10-07T14:30:40",
+      "finishedAt": "2026-10-07T14:31:08",
+      "stdout": "======================================================================\nTECHSTORE STORY IMPORTER\nOCR ANALYSIS\n======================================================================\n\nНайдено кадров: 51\n\nTesseract: 5.5.3.20260724\n\nЗагружено фотографий: 3\n  [1] /uploads/imports/iphone-14/iphone-14-1.jpg\n      Кадр: frame_0044.jpg\n      Score: 315.82\n  [2] /uploads/imports/iphone-14/iphone-14-2.jpg\n      Кадр: frame_0035.jpg\n      Score: 274.32\n  [3] /uploads/imports/iphone-14/iphone-14-3.jpg\n      Кадр: frame_0050.jpg\n      Score: 157.38\n\n[1/51] OCR: frame_0000.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[2/51] OCR: frame_0001.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Состояние: Б/У\n\n[3/51] OCR: frame_0002.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[4/51] OCR: frame_0003.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[5/51] OCR: frame_0004.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[6/51] OCR: frame_0005.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[7/51] OCR: frame_0006.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[8/51] OCR: frame_0007.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[9/51] OCR: frame_0008.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Цены: [33000]\n  Состояние: Б/У\n\n[10/51] OCR: frame_0009.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[11/51] OCR: frame_0010.jpg\n  Память: 14256 GB\n  Состояние: Б/У\n\n[12/51] OCR: frame_0011.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[13/51] OCR: frame_0012.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Цены: [33000]\n  Состояние: Б/У\n\n[14/51] OCR: frame_0013.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[15/51] OCR: frame_0014.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[16/51] OCR: frame_0015.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[17/51] OCR: frame_0016.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[18/51] OCR: frame_0017.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[19/51] OCR: frame_0018.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Цены: [33000]\n  Состояние: Б/У\n\n[20/51] OCR: frame_0019.jpg\n  Цены: [33000]\n  Состояние: Б/У\n\n[21/51] OCR: frame_0020.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Состояние: Б/У\n\n[22/51] OCR: frame_0021.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[23/51] OCR: frame_0022.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[24/51] OCR: frame_0023.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[25/51] OCR: frame_0024.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[26/51] OCR: frame_0025.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[27/51] OCR: frame_0026.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Состояние: Б/У\n\n[28/51] OCR: frame_0027.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Цены: [33000]\n  Состояние: Б/У\n\n[29/51] OCR: frame_0028.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[30/51] OCR: frame_0029.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Состояние: Б/У\n\n[31/51] OCR: frame_0030.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[32/51] OCR: frame_0031.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[33/51] OCR: frame_0032.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[34/51] OCR: frame_0033.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[35/51] OCR: frame_0034.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Состояние: Б/У\n\n[36/51] OCR: frame_0035.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[37/51] OCR: frame_0036.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[38/51] OCR: frame_0037.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[39/51] OCR: frame_0038.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Цены: [33000]\n  Состояние: Б/У\n\n[40/51] OCR: frame_0039.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[41/51] OCR: frame_0040.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[42/51] OCR: frame_0041.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[43/51] OCR: frame_0042.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Состояние: Б/У\n\n[44/51] OCR: frame_0043.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[45/51] OCR: frame_0044.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[46/51] OCR: frame_0045.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[47/51] OCR: frame_0046.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[48/51] OCR: frame_0047.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Состояние: Б/У\n\n[49/51] OCR: frame_0048.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Цены: [33000]\n  Состояние: Б/У\n\n[50/51] OCR: frame_0049.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Состояние: Б/У\n\n[51/51] OCR: frame_0050.jpg\n  Модель: iPhone 14\n  Бренд: Apple\n  Память: 256 GB\n  Состояние: Б/У\n\n======================================================================\nOCR ЗАВЕРШЁН\n======================================================================\n\nИТОГОВЫЙ ТОВАР:\n\nНазвание:    iPhone 14\nБренд:       Apple\nПамять:      256 GB\nСостояние:   Б/У\nЦена:        33000 ₽\nУверенность: 90.2%\nФотографий:  3\n\nМодели:\n  iPhone 14: 49\n\nБренды:\n  Apple: 49\n\nПамять:\n  256 GB: 43\n  14256 GB: 1\n\nЦены:\n  33000 ₽: 41\n\nСостояние:\n  Б/У: 51\n\nФотографии:\n  [1] /uploads/imports/iphone-14/iphone-14-1.jpg\n      Кадр: frame_0044.jpg\n      Score: 315.82\n  [2] /uploads/imports/iphone-14/iphone-14-2.jpg\n      Кадр: frame_0035.jpg\n      Score: 274.32\n  [3] /uploads/imports/iphone-14/iphone-14-3.jpg\n      Кадр: frame_0050.jpg\n      Score: 157.38\n\n----------------------------------------------------------------------\n\nOCR JSON:\nC:\\project\\tech_store\\telegram\\importer\\output\\ocr_result.json\n\nPRODUCT DRAFT:\nC:\\project\\tech_store\\telegram\\importer\\output\\product_draft.json\n\n======================================================================\n",
+      "stderr": ""
+    },
+    {
+      "step": 3,
+      "name": "Выбор лучших фотографий",
+      "script": "image_selector.py",
+      "status": "SUCCESS",
+      "returnCode": 0,
+      "outputsValid": true,
+      "startedAt": "2026-10-07T14:31:08",
+      "finishedAt": "2026-10-07T14:31:10",
+      "stdout": "======================================================================\nTECHSTORE IMAGE SELECTOR\n======================================================================\n\nТовар:       iPhone 14\nSlug:        iphone-14\n\nНайдено кадров: 51\n\nАнализ кадров...\n\nУдаляем старые изображения:\n  C:\\project\\tech_store\\public\\uploads\\imports\\iphone-14\n\nВыбранные фотографии:\n  1. frame_0044.jpg\n     → iphone-14-1.jpg\n     score: 315.82\n  2. frame_0035.jpg\n     → iphone-14-2.jpg\n     score: 274.32\n  3. frame_0050.jpg\n     → iphone-14-3.jpg\n     score: 157.38\n\n✓ product_draft.json обновлён\n\n✓ Изображений сохранено: 3\n\nПапка товара:\n  C:\\project\\tech_store\\public\\uploads\\imports\\iphone-14\n\nJSON:\n  C:\\project\\tech_store\\telegram\\importer\\output\\product_images.json\n\n======================================================================\nIMAGE SELECTOR SUCCESS\n======================================================================\n",
+      "stderr": ""
+    },
+    {
+      "step": 4,
+      "name": "Обогащение товара",
+      "script": "product_enricher.py",
+      "status": "SUCCESS",
+      "returnCode": 0,
+      "outputsValid": true,
+      "startedAt": "2026-10-07T14:31:10",
+      "finishedAt": "2026-10-07T14:31:10",
+      "stdout": "\n======================================================================\nTECHSTORE PRODUCT ENRICHER\n======================================================================\n\nНазвание:       iPhone 14\nБренд:          Apple\nМодель:         iPhone 14\nКатегория:      phones\nПамять:         256 GB\nСостояние:      Б/У\nЦена:           33000 ₽\nФотографий:     3\nOCR confidence: 90.2%\n\nResearch:       Проверено\nИсточник:       Apple Support\n\n✓ Product enrichment завершён.\n\nФайл:\n  C:\\project\\tech_store\\telegram\\importer\\output\\enriched_product.json\n\n======================================================================\n",
+      "stderr": ""
+    },
+    {
+      "step": 5,
+      "name": "Проверка качества",
+      "script": "validator.py",
+      "status": "SUCCESS",
+      "returnCode": 0,
+      "outputsValid": true,
+      "startedAt": "2026-10-07T14:31:10",
+      "finishedAt": "2026-10-07T14:31:11",
+      "stdout": "\n======================================================================\nTECHSTORE PRODUCT VALIDATOR\n======================================================================\n\nРезультат:        GOOD\nОценка качества:  100/100\nОшибок:            0\nПредупреждений:    0\n\nНазвание:          iPhone 14\nБренд:             Apple\nМодель:            iPhone 14\nКатегория:         phones\nЦена:              33000 ₽\nФотографий:        3\nOCR confidence:    90.2%\n\n✓ Товар прошёл проверку.\n✓ Можно отправлять в ProductDraft.\n\nРезультат сохранён:\n  C:\\project\\tech_store\\telegram\\importer\\output\\validation.json\n\n======================================================================\n",
+      "stderr": ""
+    },
+    {
+      "step": 6,
+      "name": "Сохранение в ProductDraft",
+      "script": "save_draft.py",
+      "status": "SUCCESS",
+      "returnCode": 0,
+      "outputsValid": true,
+      "startedAt": "2026-10-07T14:31:11",
+      "finishedAt": "2026-10-07T14:31:11",
+      "stdout": "\n======================================================================\nTECHSTORE SAVE DRAFT\n======================================================================\n\nНазвание:       iPhone 14\nБренд:          Apple\nМодель:         iPhone 14\nКатегория:      phones\nСостояние:      Б/У\nПамять:         256 GB\nЦена:           33 000 ₽\nФотографий:     3\nOCR:            90.2%\n\nПОДКЛЮЧЕНИЕ К POSTGRESQL...\nПодключение успешно.\n\nPRODUCT DRAFT СОЗДАН\n\nID:              7\nStatus:          PENDING\nCategory ID:     10\n\nИзображения:\n  1. /uploads/imports/iphone-14/iphone-14-1.jpg\n  2. /uploads/imports/iphone-14/iphone-14-2.jpg\n  3. /uploads/imports/iphone-14/iphone-14-3.jpg\n\n✓ Новый товар добавлен в очередь модерации.\n✓ В каталоге пока НЕ опубликован.\n\nРезультат: C:\\project\\tech_store\\telegram\\importer\\output\\import_result.json\n\n======================================================================\n",
+      "stderr": ""
+    }
+  ],
+  "importResult": {
+    "status": "CREATED",
+    "draftId": 7,
+    "categoryId": 10,
+    "category": "phones",
+    "fingerprint": "afa9b875a13feeef7770642c52aef6d83b8d5117eed086c5127d7da946a4c463",
+    "images": 3,
+    "ocrConfidence": 0.902,
+    "researchVerified": true,
+    "message": "ProductDraft успешно создан."
+  },
+  "error": null
+}

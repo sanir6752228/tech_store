@@ -1,0 +1,22 @@
+{
+  "productName": "iPhone 14",
+  "productSlug": "iphone-14",
+  "count": 3,
+  "images": [
+    {
+      "frame": "frame_0044.jpg",
+      "score": 315.82,
+      "path": "/uploads/imports/iphone-14/iphone-14-1.jpg"
+    },
+    {
+      "frame": "frame_0035.jpg",
+      "score": 274.32,
+      "path": "/uploads/imports/iphone-14/iphone-14-2.jpg"
+    },
+    {
+      "frame": "frame_0050.jpg",
+      "score": 157.38,
+      "path": "/uploads/imports/iphone-14/iphone-14-3.jpg"
+    }
+  ]
+}

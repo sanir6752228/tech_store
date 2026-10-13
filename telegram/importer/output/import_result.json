@@ -1,0 +1,11 @@
+{
+  "status": "CREATED",
+  "draftId": 7,
+  "categoryId": 10,
+  "category": "phones",
+  "fingerprint": "afa9b875a13feeef7770642c52aef6d83b8d5117eed086c5127d7da946a4c463",
+  "images": 3,
+  "ocrConfidence": 0.902,
+  "researchVerified": true,
+  "message": "ProductDraft успешно создан."
+}

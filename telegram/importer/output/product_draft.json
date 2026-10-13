@@ -1,0 +1,58 @@
+{
+  "name": "iPhone 14",
+  "brand": "Apple",
+  "model": "iPhone 14",
+  "memory": "256 GB",
+  "condition": "Б/У",
+  "price": 33000,
+  "description": "Товар с пробегом.",
+  "images": [
+    "/uploads/imports/iphone-14/iphone-14-1.jpg",
+    "/uploads/imports/iphone-14/iphone-14-2.jpg",
+    "/uploads/imports/iphone-14/iphone-14-3.jpg"
+  ],
+  "imageDetails": [
+    {
+      "frame": "frame_0044.jpg",
+      "score": 315.82,
+      "path": "/uploads/imports/iphone-14/iphone-14-1.jpg"
+    },
+    {
+      "frame": "frame_0035.jpg",
+      "score": 274.32,
+      "path": "/uploads/imports/iphone-14/iphone-14-2.jpg"
+    },
+    {
+      "frame": "frame_0050.jpg",
+      "score": 157.38,
+      "path": "/uploads/imports/iphone-14/iphone-14-3.jpg"
+    }
+  ],
+  "source": {
+    "type": "telegram_story",
+    "video": "media/story.mp4"
+  },
+  "confidence": 0.902,
+  "statistics": {
+    "frames_analyzed": 51,
+    "models": {
+      "iPhone 14": 49
+    },
+    "brands": {
+      "Apple": 49
+    },
+    "memories": {
+      "256 GB": 43,
+      "14256 GB": 1
+    },
+    "prices": {
+      "33000": 41
+    },
+    "conditions": {
+      "Б/У": 51
+    },
+    "selected_images": 3
+  },
+  "imageCount": 3,
+  "imageSlug": "iphone-14"
+}

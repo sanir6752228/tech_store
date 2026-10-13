@@ -1,0 +1,11 @@
+-- AlterTable
+ALTER TABLE "Product" ADD COLUMN     "camera" TEXT,
+ADD COLUMN     "display" TEXT,
+ADD COLUMN     "isHit" BOOLEAN NOT NULL DEFAULT false,
+ADD COLUMN     "isNew" BOOLEAN NOT NULL DEFAULT false,
+ADD COLUMN     "processor" TEXT,
+ADD COLUMN     "rating" INTEGER NOT NULL DEFAULT 0,
+ADD COLUMN     "reviews" INTEGER NOT NULL DEFAULT 0,
+ADD COLUMN     "sales" INTEGER NOT NULL DEFAULT 0,
+ADD COLUMN     "sim" TEXT,
+ADD COLUMN     "year" INTEGER;

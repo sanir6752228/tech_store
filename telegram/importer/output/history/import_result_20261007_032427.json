@@ -1,0 +1,7 @@
+{
+  "status": "DUPLICATE",
+  "draftId": 5,
+  "method": "similarity",
+  "fingerprint": "afa9b875a13feeef7770642c52aef6d83b8d5117eed086c5127d7da946a4c463",
+  "message": "Товар уже существует в ProductDraft."
+}
